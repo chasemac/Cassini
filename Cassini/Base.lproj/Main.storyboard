@@ -78,10 +78,20 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UfL-Lz-9kh">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </scrollView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="qTp-ro-2io">
+                                <rect key="frame" x="157.5" y="303.5" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="5w7-YW-RPQ"/>
+                                    <constraint firstAttribute="width" constant="60" id="PFP-dN-QKG"/>
+                                </constraints>
+                                <color key="color" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="UfL-Lz-9kh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IXM-Bx-zXD"/>
+                            <constraint firstItem="qTp-ro-2io" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aJE-Fg-1Ob"/>
+                            <constraint firstItem="qTp-ro-2io" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hAX-hQ-dLu"/>
                             <constraint firstItem="UfL-Lz-9kh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rdM-Vv-M7f"/>
                             <constraint firstAttribute="trailing" secondItem="UfL-Lz-9kh" secondAttribute="trailing" id="xDc-Kw-kPm"/>
                             <constraint firstItem="UfL-Lz-9kh" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="xwE-PO-YfZ"/>
@@ -90,6 +100,7 @@
                     <navigationItem key="navigationItem" id="t8W-jA-qde"/>
                     <connections>
                         <outlet property="scrollView" destination="UfL-Lz-9kh" id="KMo-rE-Dyq"/>
+                        <outlet property="spinner" destination="qTp-ro-2io" id="9er-TE-NPz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -107,7 +118,7 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="96H-N6-eDa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1473" y="36"/>
+            <point key="canvasLocation" x="-1719" y="489"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Sgx-50-WlU">
